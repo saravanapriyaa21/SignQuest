@@ -47,7 +47,7 @@ React.js, Vite, Tailwind CSS, Framer Motion, JavaScript, Node.js, GitHub
 
 ---
 
-## ⚡ How to Run Locally  
+## How to Run Locally  
 ```bash
 # Clone the repository
 git clone https://github.com/saravanapriyaa21/SignQuest.git
