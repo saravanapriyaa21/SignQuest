@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect, useContext } from "react";
+import { API } from "../config";
 
 const UserContext = createContext();
 
@@ -20,7 +21,7 @@ export const UserProvider = ({ children }) => {
 
     const fetchUser = async (username) => {
         try {
-            const res = await fetch(`http://localhost:5050/api/user/${username}`);
+            const res = await fetch(`${API}/user/${username}`);
             if (res.ok) {
                 const userData = await res.json();
                 setUser(userData);
@@ -36,7 +37,7 @@ export const UserProvider = ({ children }) => {
 
     const login = async (username, avatar) => {
         try {
-            const res = await fetch("http://localhost:5050/api/user/login", {
+            const res = await fetch(`${API}/user/login`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, avatar }),
@@ -73,7 +74,7 @@ export const UserProvider = ({ children }) => {
         setUser(updatedUser);
 
         try {
-            await fetch("http://localhost:5050/api/user/update-progress", {
+            await fetch(`${API}/user/update-progress`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username: user.username, ...stats }),
@@ -91,7 +92,7 @@ export const UserProvider = ({ children }) => {
         setUser(prev => ({ ...prev, xp: prev.xp - cost })); // Optimistic
 
         try {
-            const res = await fetch("http://localhost:5050/api/user/buy-hint", {
+            const res = await fetch(`${API}/user/buy-hint`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username: user.username, cost }),
@@ -110,7 +111,7 @@ export const UserProvider = ({ children }) => {
         setUser(prev => ({ ...prev, unlockedAvatars: [...prev.unlockedAvatars, avatarId] }));
 
         try {
-            await fetch("http://localhost:5050/api/user/unlock-avatar", {
+            await fetch(`${API}/user/unlock-avatar`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username: user.username, avatarId }),
@@ -126,7 +127,7 @@ export const UserProvider = ({ children }) => {
         setUser(prev => ({ ...prev, avatar: avatarId }));
 
         try {
-            const res = await fetch("http://localhost:5050/api/user/update-avatar", {
+            const res = await fetch(`${API}/user/update-avatar`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username: user.username, avatar: avatarId }),

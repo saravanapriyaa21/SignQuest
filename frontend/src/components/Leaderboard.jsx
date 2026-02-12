@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useUser } from '../context/UserContext';
+import { API } from '../config';
 
 export default function Leaderboard({ onClose }) {
     const { user } = useUser();
@@ -7,7 +8,7 @@ export default function Leaderboard({ onClose }) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5050/api/leaderboard')
+        fetch(`${API}/leaderboard`)
             .then(res => res.json())
             .then(data => {
                 setLeaders(data);

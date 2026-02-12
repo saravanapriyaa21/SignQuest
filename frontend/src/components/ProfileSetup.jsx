@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useUser } from '../context/UserContext';
 import { AVATARS } from '../data/avatars';
+import { API } from '../config';
 
 export default function ProfileSetup() {
     const { login } = useUser();
@@ -12,7 +13,7 @@ export default function ProfileSetup() {
     const checkUser = async () => {
         if (!username.trim()) return;
         try {
-            const res = await fetch(`http://localhost:5050/api/user/${username}`);
+            const res = await fetch(`${API}/user/${username}`);
             if (res.ok) {
                 const data = await res.json();
                 setExistingUser(data);
