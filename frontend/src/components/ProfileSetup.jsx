@@ -64,7 +64,7 @@ export default function ProfileSetup() {
                 gap: '30px'
             }}>
                 <div>
-                    <h1 style={{ color: '#6c5ce7', margin: 0, fontSize: '2.5rem' }}>Welcome to SignQuest! 🚀</h1>
+                    <h1 style={{ color: '#6c5ce7', margin: 0, fontSize: '2.5rem' }}>Welcome to SignQuest!</h1>
                     <p style={{ color: '#636e72', fontSize: '1.2rem', marginTop: '10px' }}>
                         Begin your adventure by creating your profile.
                     </p>
