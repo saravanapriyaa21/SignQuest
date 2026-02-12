@@ -46,3 +46,37 @@ button:active{transform:translateY(1px)}
 }
 
  */
+
+/* High Contrast Mode Accessibility */
+body.high-contrast .app {
+  background: #2d3436 !important;
+  color: #ffeaa7 !important;
+}
+
+body.high-contrast .card, 
+body.high-contrast .message,
+body.high-contrast .topbar {
+  background: #000 !important;
+  border: 3px solid #ffeaa7 !important;
+  color: #fff !important;
+}
+
+body.high-contrast button {
+  filter: grayscale(0%) contrast(1.2) !important;
+  border-width: 4px !important;
+  color: #000 !important; 
+  background: #ffeaa7 !important; /* Yellow buttons */
+  text-shadow: none !important;
+  box-shadow: 6px 6px 0px #fff !important; /* Hard shadow */
+}
+
+body.high-contrast .title {
+  color: #fab1a0 !important;
+  text-decoration: underline;
+}
+
+body.high-contrast img,
+body.high-contrast video {
+  border: 4px solid #fff !important;
+  filter: contrast(1.2) brightness(1.1);
+}

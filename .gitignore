@@ -1,0 +1,63 @@
+# =========================
+# Node modules
+# =========================
+node_modules/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+# Logs
+# =========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Build folders
+# =========================
+dist/
+build/
+.out/
+.vercel/
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE stuff
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Mac specific nonsense
+# =========================
+*.swp
+
+# =========================
+# Mongo local data (if any)
+# =========================
+data/
+dump/
+
+# =========================
+# Coverage / testing
+# =========================
+coverage/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
