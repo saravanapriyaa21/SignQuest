@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Ziggy from "./components/Ziggy";
 import ProgressBar from "./components/ProgressBar";
-import signs from "./data/signs";
-import LANDS from "./data/land";
+import signs from "./data/signs.js";
+import LANDS from "./data/land.js";
 import { useUser } from "./context/UserContext";
 import ProfileSetup from "./components/ProfileSetup";
 import Leaderboard from "./components/Leaderboard";
