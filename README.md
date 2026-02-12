@@ -1,64 +1,112 @@
-# SignQuest  
+# **SignQuest**
 
-**Gamified Sign Language Learning Adventure Web App**  
+**SignQuest** is a gamified web platform that turns learning sign language into an adventure instead of a chore.
+Learners travel across a colorful world map, unlock new “lands,” and practice signs through interactive quizzes and challenges.
 
----
-
-## Description  
-SignQuest is an **interactive web app** that turns learning sign language into a fun, gamified adventure. Learners explore a colorful map, unlock “lands” with new signs, and practice through quizzes and interactive challenges.  
-
-**Ziggy**, our cheerful animated mentor, guides learners with encouragement and hints. Progress tracking and streaks keep learners motivated, making learning feel like an engaging journey rather than a textbook exercise.  
+Guiding them along the way is **Ziggy**, an animated mentor who celebrates correct answers, gives hints, and keeps motivation high. The goal is simple: make sign language learning accessible, engaging, and fun for all ages.
 
 ---
 
-## Features  
-- Gamified map with interactive “lands”  
-- Animated mentor Ziggy guiding learners  
-- Video-based sign demonstrations  
-- Multiple-choice quizzes (future: fill-in-the-blanks, matching, interactive Ziggy actions)  
-- Progress tracking and streak system  
-- Accessibility-first design, suitable for learners of all ages  
+## **Features**
+
+* Gamified world map with unlockable learning lands
+* Animated mentor (Ziggy) providing feedback and encouragement
+* Video-based sign demonstrations
+* Quiz system with streak tracking and XP
+* Persistent user progress using MongoDB
+* Leaderboard with top learners
+* Unlockable avatars and progression system
+* Accessibility-focused UI for beginners and young learners
 
 ---
 
-## Built With  
-React.js, Vite, Tailwind CSS, Framer Motion, JavaScript, Node.js, GitHub  
+## **Tech Stack**
+
+### **Frontend**
+
+* React
+* Vite
+* JavaScript
+* CSS
+
+### **Backend**
+
+* Node.js
+* Express
+* MongoDB
+
+### **Tools & Deployment**
+
+* Git & GitHub
+* Render / Vercel
 
 ---
 
-## How We Built It  
-1. Built with **React + TailwindCSS** for a responsive, playful UI.  
-2. Designed a **gamified map system**, where each land represents a new learning milestone.  
-3. Added **animations (Framer Motion)** to make interactions feel alive.  
-4. Structured **sign data** (words, videos, hints) into an easy-to-extend format.  
-5. Focused on **accessibility-first design**, ensuring the app is welcoming to everyone.  
+## **How It Works**
+
+Each “land” represents a learning level containing a set of signs.
+
+Users:
+
+1. Learn signs through looping demonstration videos
+2. Take quizzes to reinforce recognition
+3. Earn XP and maintain streaks
+4. Unlock new lands and avatars
+5. Save progress persistently through the backend
+
+The frontend communicates with a Node/Express API to store and retrieve user data, enabling persistent learning across sessions. The system is structured so new signs, lands, and features can be added easily by extending simple data files.
 
 ---
 
-## Future Plans  
-1. **Expand learning modes**: fill-in-the-blanks, matching, and drag-and-drop activities.  
-2. **Interactive Ziggy**: learners will soon watch and mimic Ziggy’s sign demonstrations.  
-3. **Larger library**: more signs, categories, and multiple sign languages for inclusivity.  
-4. **Mobile-first version**: bring SignQuest to phones and tablets.  
-5. **AI-powered practice**: integrate sign recognition for real-time feedback.  
-6. **Community partnerships**: collaborate with schools and accessibility programs.  
+## **Future Improvements**
 
-> **Mission:** _To make sure every voice is heard, even when it speaks through hands._  
+* More quiz modes (matching, fill-in-the-blank, drag-and-drop)
+* More sign categories and languages
+* Mobile-optimized version
+* Optional AI sign recognition practice
+* Classroom and accessibility program integrations
 
 ---
 
-## How to Run Locally  
+## **Mission**
+
+To make communication more inclusive by helping more people learn sign language in a way that feels playful, encouraging, and approachable.
+
+---
+
+## **Run Locally**
+
 ```bash
-# Clone the repository
 git clone https://github.com/saravanapriyaa21/SignQuest.git
+cd SignQuest
 
-# Navigate into project folder
-cd voice_of_hands
-
-# Install dependencies
+# install backend
+cd backend
 npm install
 
-# Start development server
-npm run dev
+# install frontend
+cd ../frontend
+npm install
 
-# Open in browser: http://localhost:5173
+# run backend
+cd ../backend
+node server.js
+
+# run frontend
+cd ../frontend
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## **License**
+
+MIT License
+
+Push it and stop touching the README before you invent new problems to fix.
