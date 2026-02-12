@@ -552,7 +552,7 @@ export default function App() {
             onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
           >
             <img
-              src={`src/assets/avatars/${user.avatar}.png`}
+              src={`/avatars/${user.avatar}.png`}
               alt="avatar"
               style={{
                 width: '100%',
@@ -697,7 +697,7 @@ export default function App() {
                     boxShadow: '0 0 20px rgba(255, 215, 0, 0.5)'
                   }}>
                     <img
-                      src={`src/assets/avatars/${currentId}.png`}
+                      src={`/avatars/${currentId}.png`}
                       alt="Unlock"
                       style={{
                         width: '100%',

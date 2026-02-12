@@ -147,7 +147,7 @@ export default function ProfileSetup() {
                                             }}
                                         >
                                             <img
-                                                src={`src/assets/avatars/${av.img}.png`}
+                                                src={`/avatars/${av.img}.png`}
                                                 alt={av.name}
                                                 style={{
                                                     width: '100%',
@@ -222,7 +222,7 @@ export default function ProfileSetup() {
                             background: 'transparent' // Removed white background
                         }}>
                             <img
-                                src={`src/assets/avatars/${selectedAvatar.img}.png`}
+                                src={`/avatars/${selectedAvatar.img}.png`}
                                 alt={selectedAvatar.name}
                                 style={{
                                     width: '100%',

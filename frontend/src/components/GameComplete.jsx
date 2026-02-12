@@ -224,7 +224,7 @@ export default function GameComplete({ user, onPlayAgain, onBackToMap, onShowLea
                             border: '2px solid #6c5ce7'
                         }}>
                             <img
-                                src={user?.avatar ? `src/assets/avatars/${user.avatar}.png` : ''}
+                                src={user?.avatar ? `/avatars/${user.avatar}.png` : ''}
                                 alt="Avatar"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.6)' }}
                             />

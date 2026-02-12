@@ -75,7 +75,7 @@ export default function AvatarSelector({ onClose }) {
                                     position: 'relative'
                                 }}>
                                     <img
-                                        src={`src/assets/avatars/${av.img}.png`}
+                                        src={`/avatars/${av.img}.png`}
                                         alt={av.name}
                                         style={{
                                             width: '100%',

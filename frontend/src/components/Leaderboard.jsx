@@ -80,7 +80,7 @@ export default function Leaderboard({ onClose }) {
                                         </td>
                                         <td style={{ padding: '15px 10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
                                             <img
-                                                src={`src/assets/avatars/${leader.avatar}.png`}
+                                                src={`/avatars/${leader.avatar}.png`}
                                                 alt={leader.avatar}
                                                 style={{ width: '30px', height: '30px', borderRadius: '50%', objectFit: 'cover' }}
                                                 onError={(e) => { e.target.onerror = null; e.target.src = 'https://api.dicebear.com/7.x/avataaars/svg?seed=' + leader.avatar; }}
