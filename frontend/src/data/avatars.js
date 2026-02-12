@@ -52,7 +52,7 @@ export const AVATARS = [
     {
         id: "star",
         name: "Star",
-        fullName: "Star Avatar (Unlockable)",
+        fullName: "Star Avatar",
         img: "star",
         unlockXP: 450, // Approx total after 3 worlds
         description: "The Star avatar is unlocked after completing 3 worlds! It represents dedication, growth, and the excitement of mastering new signs.",
