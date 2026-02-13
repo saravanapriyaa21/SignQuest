@@ -38,7 +38,7 @@ Guiding them along the way is **Ziggy**, an animated mentor who celebrates corre
 ### **Tools & Deployment**
 
 * Git & GitHub
-* Render / Vercel
+* Render
 
 ---
 
@@ -74,39 +74,37 @@ To make communication more inclusive by helping more people learn sign language 
 
 ---
 
-## **Run Locally**
+## Run Locally
 
-```bash
+```
 git clone https://github.com/saravanapriyaa21/SignQuest.git
 cd SignQuest
 
-# install backend
+### Backend
 cd backend
 npm install
 
-# install frontend
+Create .env:
+PORT=5050
+MONGO_URI=your_mongodb_uri
+
+node server.js
+
+### Frontend
 cd ../frontend
 npm install
 
-# run backend
-cd ../backend
-node server.js
+Create .env:
+VITE_API_URL=http://localhost:5050/api
 
-# run frontend
-cd ../frontend
 npm run dev
-```
 
-Open in browser:
-
-```
+Open:
 http://localhost:5173
-```
 
+```
 ---
 
 ## **License**
 
 MIT License
-
-Push it and stop touching the README before you invent new problems to fix.
